@@ -9,7 +9,7 @@ taro-qq
 
 taro-xxx
 
-每各端通过插件的方式提供, 各端提供统一的接口方法. 
+每各端通过插件的方式提供, 各端提供统一的接口方法. 
 ## shared
 Taro 内部使用的 utils。包含了常用的类型判断、错误断言、组件类型/声明/参数等。`@tarojs/shared` 会跨 node/浏览器/小程序/React Native 使用，不得使用平台特有特性。
 - `processApis` native-api.ts 它将**平台**所有的`eg:微信原生` API 进行二次封装，然后挂载在 Taro 对象中。
@@ -61,3 +61,30 @@ export default Taro
   - `chain`
   - `Link`
   - `interceptors` loggerInterceptor, timeoutInterceptor
+
+## taro-router
+H5 端路由系统
+- `router.ts` createRouter POP | PUSH | REPLACE
+  - hidePage
+  - showPage
+  - unloadPage
+  - pageOnReady
+  - loadPage
+- `history.ts` setHistoryMode
+  - createBrowserHistory
+  - createHashHistory
+- `api.ts` 对齐小程序方法
+  - navigateTo
+  - redirectTo
+  - navigateBack
+  - switchTab
+  - getCurrentPages
+
+## taro-h5
+暴露给 `@tarojs/taro` 的 H5 端 API    
+主要实现模拟小程序的功能，选择图片、定位、Storage
+- `@tarojs/router`
+- `api`
+  - `location` **chooseLocation** map.qq.com
+  - `window` **onWindowResize**
+  - `Storage`
