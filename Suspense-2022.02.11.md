@@ -1,12 +1,16 @@
 ### Suspense
 
 ##### React 16.6    
-_Suspense_ & _code split_
+- Suspense
+- react-cache
+
 
 > 用同步的方法写异步
 > 
 1. 异步加载代码
 2. 异步加载数据
+
+
 
 ##### Fiber
 - Schdule
