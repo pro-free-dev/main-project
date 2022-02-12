@@ -16,11 +16,11 @@ _Suspense_ & _code split_
 ##### Suspense 加载流程
 ```jsx
 
-render(ChildComp) --> Promise(Fetch) --> Promise(throw Error) --> Suspense(componentDidCatch) --> render(Loading)
+render(Todo) --> Promise(Fetch) --> Promise(throw Error) --> Suspense(componentDidCatch) --> render(Loading)
 
 Suspense(Promise.then) --> setState, render(children) 
 
-render(ChildComp) --> Promise(Fetch) --> Sync Result --> render
+render(Todo) --> Promise(Fetch) --> Sync Result --> render
 
 
 ```
