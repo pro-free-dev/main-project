@@ -1,6 +1,7 @@
 # 2022/4/9
 ## react hooks
 
+```js
 // Hooks call stack
 // 
 
@@ -211,3 +212,4 @@ let currentlyRenderingComponent;
 function prepareToUseHooks(componentIdentity) {
   currentlyRenderingComponent = componentIdentity;
 }
+```
