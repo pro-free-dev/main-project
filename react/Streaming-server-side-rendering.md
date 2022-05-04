@@ -14,3 +14,9 @@ The related topis
 1. Streaming Server-side Rendering
 2. Server-side Rendering with suspense
 3. Server Component
+
+
+> 2022/5/4
+> __Server Component__
+Server Component: sends the UI descriptions to the clients, and the REACT can easily paint the UI. And `NOT lost the client state`;
+SSR: send HTML to the client
