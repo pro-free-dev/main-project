@@ -24,6 +24,25 @@ __Concepts__
 1. concurrent rendering
 2. concurrent mode
 
+
+## React 18 Main Course
+### Concurrency
+#### Concurrency APIs
+1. useTransition()
+2. startTransition()
+3. useDeferredValue()
+
+#### New Hooks for Library Authors
+1. useSyncExternalStore()
+2. useInsersionEffect()
+3. useId()
+
+#### behind-the-scenes (automatical)
+1. State Batching
+2. Improve Suspense (support by Server-side-rendring)
+3. Server Components (future)
+
+
 ## About Nextjs 12
 1. pre-rendering (note: nextjs is pre-rendering by all pages.)
     - Static Site Generation (SSG)
