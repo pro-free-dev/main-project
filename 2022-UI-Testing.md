@@ -6,9 +6,8 @@
 
 
 ## 目标
-- 提升质量
-- 自动化测试
-- 测试驱动开发
+- UT + Testing User Interactions
+- test-driven development
 
 
 ## 提升质量方法
@@ -16,12 +15,13 @@
 2. 代码结构便于测试；模块化、纯函数；视图和Logic分离；试图负责渲染界面，Logic负责处理数据和副作用；
 3. 单元测试；`JEST` `test-driven-development`
 4. 集成测试；
+5. 用户交互测试；
 
 
 ## 整体流转
 1. 在TestHub录入测试用例
-2. 新代码迁入
-3. 开发根据测试用例写单测
+2. 开发过程中编写`UT`
+3. 开发根据测试用例写交互测试`Testing User Interactions`
 4. 提交代码触发Pipeline
 5. 运行结果更新至TestHub
 6. Trippal通知到Commiter
